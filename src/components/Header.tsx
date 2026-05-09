@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import hbLogo from "@/assets/image.png";
+import hbLogo from "@/assets/hb-plus-logo.png";
 
 export const Header = () => (
   <motion.header
@@ -12,8 +12,10 @@ export const Header = () => (
       <img 
         src={hbLogo} 
         alt="HB+ logo" 
-        className="h-8 w-auto object-contain" 
-        style={{ filter: "brightness(0) saturate(100%) invert(84%) sepia(34%) saturate(763%) hue-rotate(357deg) brightness(101%) contrast(105%)" }}
+        className="h-8 w-auto object-contain transition-all duration-300" 
+        style={{ 
+          filter: "brightness(0) saturate(100%) invert(89%) sepia(11%) saturate(368%) hue-rotate(355deg) brightness(92%) contrast(86%) drop-shadow(0 0 10px rgba(212, 209, 193, 0.2))" 
+        }}
       />
     </div>
     <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-muted-foreground font-light">
